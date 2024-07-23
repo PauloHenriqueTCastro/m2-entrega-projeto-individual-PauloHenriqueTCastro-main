@@ -1,0 +1,287 @@
+main {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Setores {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: var(--WhiteFixed);
+    border: 1px solid var(--grey0);
+    flex-direction: column;
+    height: 120px;
+    gap: 10px;
+}
+
+.empresaSetores {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 10px;
+}
+
+.empresaSetores>li {
+    border: 1px solid var(--grey0);
+}
+
+.conteinerEmpresa {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.conteinerEmpresa>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinerCriarEmpresa {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 400px;
+    background-color: var(--WhiteFixed);
+    border: 1px solid var(--grey0);
+    gap: 15px;
+}
+
+.conteinerDepartamentos {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.conteinerDepartamentos>div {
+    width: 90%;
+}
+
+.conteinerlistarDepartamentosEditarDeletar {
+    margin-top: 30px;
+    width: 100%;
+    background-color: var(--WhiteFixed);
+    border: 1px solid var(--grey0);
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.conteinerListarEmpresas {
+    margin-top: 30px;
+    width: 90%;
+    background-color: var(--WhiteFixed);
+    border: 1px solid var(--grey0);
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.conteinerCarrocel {
+    background-color: var(--WhiteFixed);
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    height: max-content;
+    align-items: center;
+    overflow-x: scroll;
+    width: 90%;
+}
+
+.conteinerCarrocel>li {
+    border: 1px solid var(--grey0);
+    width: 300px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerCriarDeparta {
+    margin-top: 20px;
+    border: 1px solid var(--grey0);
+    background-color: var(--WhiteFixed);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinerlistarDerp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid var(--grey0);
+    background-color: var(--WhiteFixed);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 350px;
+}
+
+.conteinerFuncionarios {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.conteinerFuncionarios>div {
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.conteinerListarFuncionarios {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--grey0);
+    background-color: var(--WhiteFixed);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 20px;
+}
+
+.conteinerContratarFuncionarios {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--grey0);
+    background-color: var(--WhiteFixed);
+    width: 100%;
+    height: 300px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.conteinerDemitirFuncionarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    gap: 20px;
+    border: 1px solid var(--grey0);
+    background-color: var(--WhiteFixed);
+}
+
+@media (min-width: 800px) {
+    .Setores {
+        width: 50%;
+        height: 200px;
+    }
+
+    .conteinerEmpresa>div {
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteinerCriarEmpresa {
+        width: 400px;
+        margin-top: 0px;
+    }
+
+    .conteinerListarEmpresas {
+        width: 400px;
+        margin-top: 0px;
+    }
+
+    .conteinerDepartamentos>div {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .conteinerCriarDeparta {
+        height: 300px;
+        margin-top: 0px;
+        width: 300px;
+    }
+
+    .conteinerlistarDerp {
+        margin-top: 0px;
+        height: 300px;
+
+        width: 300px;
+
+    }
+
+    .conteinerlistarDepartamentosEditarDeletar {
+        margin-top: 0px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .conteinerFuncionarios>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .conteinerListarFuncionarios {
+        margin-top: 0;
+        width: 300px;
+        height: 400px;
+    }
+
+    .conteinerContratarFuncionarios {
+        width: 300px;
+        height: 400px;
+        margin-top: 0px;
+        gap: 20px;
+        margin-bottom: 0;
+    }
+
+    .conteinerDemitirFuncionarios {
+        width: 300px;
+        height: 400px;
+        margin-top: 0;
+        gap: 20px;
+    }
+}

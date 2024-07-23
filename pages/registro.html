@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/header.css">
+    <link rel="stylesheet" href="./../styles/registerPage/register.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/btn.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/text.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/input.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/cardEmpresa.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/selectGeral.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="textGeral">Grande Recrutamento</h2>
+        <div>
+            <button id="btnDarkmode" class="bntNotSelected">DarkMode</button>
+            <a href="./../../index.html"> <button class="bntNotSelected">Login</button></a>
+            <a href="./../pages/registro.html"> <button class="bntSelected">Registro</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="conteiner__Empresas">
+            <h2 class="textGeral">Setores:</h2>
+            <select class="selectGeral" id="selectSetores">
+                <option value="Alimenticio">Alimenticio</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Textil">Textil</option>
+                <option value="Manufatura">Manufatura</option>
+                <option value="Aeroespacial">Aeroespacial</option>
+                <option value="Automotiva">Automotiva</option>
+                <option value="TI">TI</option>
+                <option value="Atacado">Atacado</option>
+            </select>
+            <button class="bnt1Geral" id="BtnProcurar">Procurar</button>
+            <h2 class="textGeral">Empresas:</h2>
+            <select class="selectGeral" id="selectEmpresas"></select>
+        </div>
+        <div class="main__conteinerModalCadastro">
+            <div class="main__conteinerModalCadastro__header">
+                <h2 class="h2Geral text1">Cadastro</h2>
+                <a href="./../index.html"> <button class="textGeral bntVoltar">Voltar</button></a>
+            </div>
+            <input class="inputGeral inputRegis input1" id="nome" type="text" placeholder="Seu nome">
+            <input class="inputGeral inputRegis input2" id="email" type="text" placeholder="Seu e-mail">
+            <input class="inputGeral inputRegis input3" id="senha" type="text" placeholder="Sua senha">
+            <input class="inputGeral inputRegis input4" id="trabalho" type="text" placeholder="Qual o seu trabalho?">
+            <button class="bnt1Geral bnt1" id="bntRegis">Registar</button>
+            <span class=" textGeral h2SpanGeral span1">Já possui login?</span>
+            <a href="./../index.html" class="bnt2Geral bnt2 aLogin"><button class="textGeral bnt2LoginECadastro">Ir para
+                    página de
+                    login</button></a>
+        </div>
+    </main>
+    <script type="module" src="./../scripts/pagesScript/registro/registro.js"></script>
+    <script src="./../scripts/darkmode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/dashBoardUser/dashBoardUser.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/header.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/btn.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/text.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/input.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/cardEmpresa.css">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+<header>
+    <h2 class="textGeral">Grande Recrutamento</h2>
+    <div>
+        <button id="btnDarkmode" class="bntNotSelected">DarkMode</button>
+        <a href="./../../index.html"> <button class="bntNotSelected">Sair</button></a>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="conteinerUserEdit">
+            <h2 class="textGeral h2GeraL3">Editar informações</h2>
+            <input class="inputGeral inputPost1" id="userUsername" type="text" placeholder="Username">
+            <input class="inputGeral inputPost1" id="userEmail" type="text" placeholder="email ">
+            <input class="inputGeral inputPost1" id="userPassWord" type="text" placeholder="password">
+            <button class="bnt1Geral" id="bntUser">Alterar</button>
+        </div>
+        <div class="conteinerUserInfo">
+            <h2 class="textGeral h2GeraL3">Infomações:</h2>
+            <h2 class="textGeral" id="userEmpresa"></h2>
+            <h2 class="textGeral" id="userDepart"></h2>
+            <h2 class="textGeral">Funcionarios:</h2>
+            <ul class="conteinerFuncionarios" id="userTodosFuncio"></ul>
+        </div>
+    </main>
+    <script type="module" src="./../scripts/pagesScript/dashBoardUser/dashBoardUser.js"></script>
+    <script src="./../scripts/darkmode.js"></script>
+</body>
+
+</html>

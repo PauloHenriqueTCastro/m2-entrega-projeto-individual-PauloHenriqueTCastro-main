@@ -1,0 +1,82 @@
+.bntSelected {
+    background-color: var(--grey2);
+    border: solid transparent;
+    cursor: pointer;
+    color: var(--grey4);
+    border-radius: 4px;
+}
+
+.bntNotSelected {
+    background-color: transparent;
+    border: solid transparent;
+    cursor: pointer;
+    color: var(--grey4);
+}
+
+.bnt1Geral {
+    margin-left: 4.2%;
+    margin-right: 4.2%;
+    background-color: var(--brand-1);
+    border: solid transparent;
+    color: var(--WhiteFixed);
+    cursor: pointer;
+}
+
+.bnt2Geral {
+    margin-left: 4.2%;
+    margin-right: 4.2%;
+    color: var(--grey0);
+    border: solidv var(--grey0) 1px;
+    background-color: var(--WhiteFixed);
+    cursor: pointer;
+}
+
+.bntVoltar {
+    background-color: var(--WhiteFixed);
+    border-radius: 2px;
+    border: solid var(--grey0) 1px;
+    height: 70%;
+    width: max-content;
+    font-weight: 700;
+}
+
+.bntPost {
+    width: 69px;
+    height: 39px;
+    background-color: var(--grey4);
+    border: solid transparent;
+    border-radius: 6px;
+    color: var(--grey3);
+    cursor: pointer;
+}
+
+.userBnt {
+    width: max-content;
+    height: 28px;
+    width: 54px;
+    background-color: var(--WhiteFixed);
+    border: solid var(--grey0) 1px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.bntExpandirPost {
+    background-color: var(--grey1);
+    border-radius: 3px;
+    height: 30px;
+    color: var(--WhiteFixed);
+    border: solid transparent;
+    cursor: pointer;
+}
+
+.bnt2LoginECadastro {
+    background-color: transparent;
+    border: solid transparent;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.btnEditarDeletar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

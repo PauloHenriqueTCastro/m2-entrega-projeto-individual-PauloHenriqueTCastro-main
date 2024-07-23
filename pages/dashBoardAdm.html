@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/dashBoard/dashBoard.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/header.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/btn.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/text.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/input.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/cardEmpresa.css">
+    <link rel="stylesheet" href="./../styles/estilosGerais/selectGeral.css">
+    <title>Document</title>
+</head>
+<header>
+    <h2 class="textGeral">Grande Recrutamento</h2>
+    <div>
+        <button id="btnDarkmode" class="bntNotSelected">DarkMode</button>
+        <a href="./../../index.html"> <button class="bntNotSelected">Sair</button></a>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="Setores">
+            <h2 class="h2GeraL3">Todos os setores:</h2>
+            <select class="selectGeral" id="selectSetores"></select>
+            <button class="bnt1Geral" id="btnProcurarEmpresas">Procurar</button>
+            <ul class="empresaSetores" id="empresaSetores"></ul>
+        </div>
+        <div class="conteinerEmpresa">
+            <h2 class="textGeral">Empresa</h2>
+            <div>
+                <div class="conteinerCriarEmpresa">
+                    <h2 class="h2GeraL3 h2CriarEmpresa">Crie uma empresa</h2>
+                    <input id="nomeCriarEmpre" class="inputGeral inputPost1" type="text" placeholder="Nome">
+                    <input id="horarioCriarEmpre" class="inputGeral inputPost1" type="text"
+                        placeholder="Horario de Funcionamento">
+                    <input id="descriCriarEmpre" class="inputGeral inputPost1" type="text" placeholder="Descrição">
+                    <select class="selectGeral" id="selectSecoes" class="selectDepartament"></select>
+                    <button id="btnCadastroEmpresa" class="bnt1Geral">Criar</button>
+                </div>
+
+                <div class="conteinerListarEmpresas">
+                    <h2 class="h2GeraL3">Procurar empresa</h2>
+                    <select class="selectGeral" id="selectEmpresas" class="selectDepartament"></select>
+                    <button id="bntProcurar" class="bnt1Geral ">Procurar</button>
+                    <ul id="carrocelSetor" class="conteinerCarrocel">
+                    </ul>
+                    <p id="horarioFuncionar" class="pGeral1">Horario de Funcionamento: 9:00</p>
+                    <p id="ramoAtv" class="pGeral1">Ramo de atividade</p>
+                </div>
+            </div>
+        </div>
+        <div class="conteinerDepartamentos">
+            <h2 class="textGeral">Departamento</h2>
+            <div>
+                <div class="conteinerCriarDeparta">
+                    <h2 class="h2GeraL3">Criar departamento</h2>
+                    <select class="selectGeral" id="selectEmpresas2" class="selectDepartament"></select>
+                    <input class="inputGeral inputPost1" id="nomeDepartamento" type="text"
+                        placeholder="Nome do departamento">
+                    <input class="inputGeral inputPost1" id="descriDepartamento" type="text"
+                        placeholder="Descrição do departamento">
+                    <button class="bnt1Geral" id="bntCriardepart">Criar</button>
+                </div>
+                <div class="conteinerlistarDerp">
+                    <h2 class="h2GeraL3">Listar um departamento</h2>
+                    <select class="selectGeral" id="listarEmpreDerp"></select>
+                    <button class="bnt1Geral" id="btnProcuraDerp">Procurar</button>
+                    <select class="selectGeral" id="listarDepartamentos"></select>
+                    <button class="bnt1Geral" id="btbListarDerp">Procurar descrição</button>
+                    <p id="descriDerp" class="textGeral" placeholder="Descrição do departamento">Descrição:</p>
+                </div>
+                <div class="conteinerlistarDepartamentosEditarDeletar">
+                    <h2 class="h2GeraL3">Editar infomações do departamento:</h2>
+                    <select class="selectGeral" id="selectDepartamento"></select>
+                    <input class="inputGeral inputPost1" id="newIndoDepartamento" type="text"
+                        placeholder="Insira nova descrição">
+                    <div class="btnEditarDeletar">
+                        <button class="bnt1Geral" id="editarDepartamento">Editar</button>
+                        <button class="bnt1Geral" id="deletarDepartamento">Deletar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteinerFuncionarios">
+            <h2 class="textGeral">Funcionario</h2>
+            <div>
+                <div class='conteinerListarFuncionarios'>
+                    <h2 class="h2GeraL3">Funcionarios</h2>
+                    <select class="selectGeral" id="Funcionarios"></select>
+                    <button class="bnt1Geral" id="buscarFuncionario">Bucar</button>
+                    <input class="inputGeral inputPost1" type="text" id="modalidadeDeTrabalho"
+                        placeholder="Modalidade de trabalho">
+                    <span class="textGeral">Home office, presencial ou híbrido</span>
+                    <input class="inputGeral inputPost1" type="text" id="inputCargo" placeholder="cargo">
+                    <span class="textGeral">Estágio, júnior, pleno ou sênior</span>
+                    <div class="btnEditarDeletar">
+                        <button class="bnt1Geral" id="deletarFuncionario">Deletar</button>
+                        <button class="bnt1Geral" id="editarFuncionario">Editar</button>
+                    </div>
+                </div>
+                <div class="conteinerContratarFuncionarios">
+                    <h2 class="h2GeraL3">Contratar Funcionarios</h2>
+                    <select class="selectGeral" id="funcionariosContratar"></select>
+                    <h2 class="h2GeraL3">Empresas</h2>
+                    <select class="selectGeral" id="empresaFuncionarioContratar"></select>
+                    <button class="bnt1Geral" id="procurarDepartamentos">Procurar</button>
+                    <h2 class="h2GeraL3">Departamento</h2>
+                    <select class="selectGeral" id="departamentoFuncionarioContratar"></select>
+                    <button class="bnt1Geral" id="contratarFuncionario">Contratar</button>
+                </div>
+                <div class="conteinerDemitirFuncionarios">
+                    <h2 class="h2GeraL3">Demitir Funcionario</h2>
+                    <select class="selectGeral" id="demitirDepartamento"></select>
+                    <button class="bnt1Geral" id="demitirBuscar">Procurar</button>
+                    <select class="selectGeral" id="demitirFuncionarios"></select>
+                    <button class="bnt1Geral" id="demitirBtn">Demitir</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./../scripts/pagesScript/dashBoard/dashBoardAdm.js"></script>
+    <script src="./../scripts/darkmode.js"></script>
+</body>
+
+</html>

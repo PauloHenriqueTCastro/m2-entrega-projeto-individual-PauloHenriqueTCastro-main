@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/estilosGerais/header.css">
+    <link rel="stylesheet" href="./styles/loginPage/login.css">
+    <link rel="stylesheet" href="./styles/estilosGerais/btn.css">
+    <link rel="stylesheet" href="./styles/estilosGerais/text.css">
+    <link rel="stylesheet" href="./styles/estilosGerais/input.css">
+    <link rel="stylesheet" href="./styles/estilosGerais/cardEmpresa.css">
+    <link rel="stylesheet" href="./styles/estilosGerais/selectGeral.css">
+
+<body>
+    <header>
+        <h2 class="textGeral">Grande Recrutamento</h2>
+        <div>
+            <button id="btnDarkmode" class="bntNotSelected">DarkMode</button>
+            <a href="./index.html"> <button class="bntSelected">Login</button></a>
+            <a href="./pages/registro.html"> <button class="bntNotSelected">Registro</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="conteiner__Empresas">
+            <h2 class="textGeral">Setores:</h2>
+            <select class="selectGeral" id="selectSetores">
+                <option value="Alimenticio">Alimenticio</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Textil">Textil</option>
+                <option value="Manufatura">Manufatura</option>
+                <option value="Aeroespacial">Aeroespacial</option>
+                <option value="Automotiva">Automotiva</option>
+                <option value="TI">TI</option>
+                <option value="Atacado">Atacado</option>
+            </select>
+            <button class="bnt1Geral" id="BtnProcurar">Procurar</button>
+            <h2 class="textGeral">Empresas:</h2>
+            <select class="selectGeral" id="selectEmpresas"></select>
+        </div>
+        <div class="main__conteinerModalLogin">
+            <h2 class="h2Geral text1">Login</h2>
+            <input class="inputGeral inputLogin input1" id="inputEmail" type="text" placeholder="Seu e-mail">
+            <input class="inputGeral inputLogin input2" id="inputSenha" type="text" placeholder="Sua senha">
+            <button class="bnt1Geral inputLogin bnt1" id="btnLogin">Logar</button>
+            <span class="h2SpanGeral inputLogin span1">Ainda não possui cadastro?</span>
+            <a class="bnt2 bnt2Geral aRegistro" href="./pages/registro.html"> <button class="textGeral bnt2LoginECadastro">Ir para
+                    a
+                    pagina de Registro</button></a>
+        </div>
+    </main>
+    <script type="module" src="./scripts/pagesScript/Index/index.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+</body>
+
+</html>

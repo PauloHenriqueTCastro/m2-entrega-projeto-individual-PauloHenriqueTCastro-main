@@ -1,0 +1,43 @@
+.inputGeral {
+    border: solid var(--grey4) 2px;
+    border-radius: 4px;
+    margin-left: 4.2%;
+    margin-right: 4.2%;
+    background-color: var(--selectEInput);
+}
+
+.inputLogin {
+    height: 12%;
+}
+
+.inputRegis {
+    height: 8%;
+}
+
+.inputPost1 {
+    border: solid var(--grey4) 2px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--selectEInput);
+
+}
+
+.inputPost2 {
+    border: solid var(--grey4) 2px;
+    width: 90%;
+    height: 90px;
+    border-radius: 5px;
+    background-color: var(--selectEInput);
+
+
+}
+
+.inputPost1 {
+    border: solid var(--grey4) 2px;
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: var(--selectEInput);
+
+}
